@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO App</title>
+    <link rel="stylesheet" href="../CSS/createTask.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../JS/hamburger.js"></script>
+    <script src="../JS/createTask.js"></script>
+    
+    
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="home.html" >Home</a>
+    <a href="#add-task" class="active">Add Task</a>
+    <a href="#news">Upcoming</a>
+    <a href="#contact">Done</a>
+    <a href="../PHP/displayTask.php">All Tasks</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  
+
+  <div class="container">
+    <div class="todo-app">
+      <h1>Create Your Task</h1> <br>
+      <div class="form-container">
+        <input type="text" placeholder="Enter your task" id="taskInput">
+        <!-- <input type="date" id="dateInput"> -->
+        <input id="timePicker" type="datetime-local"
+               min="2024-01-01T00:00"
+               max="2026-12-31T23:59"
+               step="1">
+        <button id="button2"  onclick="addTask()">Add Task</button>
+      </div>
+      <ul id="todoList" class="todo-list">
+        <!-- Tasks will be dynamically added here -->
+      </ul>
+      <ul id="taskList"></ul>
+    </div>
+  </div>
+</body>
+</html>
+
